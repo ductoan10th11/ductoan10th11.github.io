@@ -12,124 +12,251 @@ html{
     border-radius: 8px;
     background-color: #58cedb99;
 }
-section{
-    width: 100%;
-    height: 100vh;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/bg5.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#ductoan10th1{
-    width: 300px;
-    height: 400px;
-    background: transparent;
-    backdrop-filter: blur(60px);
-    border: 1px solid #fff;
-    border-radius: 24px;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1);
-    &:hover{
-        /* transform: scale(1.008); */
-        box-shadow: -2px 2px 16px #000;
-        border-radius: 32px;
+@media (min-width:461px) {
+    section{
+        width: 100%;
+        height: 100vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/bg5.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-}
-#zios_img img{
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 200px;
-    max-height: 500px;
-    margin-left: 17%;
-    transform: translateX(-50%);
-    margin-top: 25px;
-    border-radius: 32px;
-    transform: scale(1);
-    cursor: alias;
-    transition: all linear .3s;
+    #ductoan10th1{
+        width: 300px;
+        height: 400px;
+        background: transparent;
+        backdrop-filter: blur(60px);
+        border: 2px solid #fff;
+        border-radius: 24px;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
         &:hover{
+            /* transform: scale(1.008); */
             box-shadow: -2px 2px 16px #000;
-            transform: scale(1.02);
+            border-radius: 32px;
         }
-}
-#zios_name{
-    text-align: center;
-    margin-top: 12px;
-}
-#zios_name h2{
-    font-size: 19px;
-    color: #fff;
-    cursor: pointer;
-}
-#zios_name h6{
-    font-weight: 500;
-    font-style: italic;
-    color: rgb(147, 147, 147);
-    margin-top: 2px;
-    cursor: default;
-}
-#zios_place{
-    cursor: default;
-    color: #fff;
-    display: flex;
-    margin-left: 95px;
-    margin-top: 8px;
-}
-#zios_place h4{
-    font-size: 14px;
-    color: rgb(198, 198, 198);
-}
-#zios_place i{
-    padding-right: 4px;
-    font-size: 14px;
-    color: rgb(198, 198, 198);
-    transition: all .5s ease;
-    &:hover{
-       color: aqua;
     }
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
-}
-ul li{
-    transform: scale(1);
-    transition: all .2s ease-in;
-}
-
-ul li:hover{
-    transform: scale(1.5);
-}
-ul li a{
-    text-decoration: none;
-    padding: 4px;
-    color: #fff;
-    transition: all 0.5s ease;
+    #zios_img img{
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 200px;
+        max-height: 500px;
+        margin-left: 17%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+        border-radius: 32px;
+        transform: scale(1);
+        cursor: alias;
+        transition: all linear .3s;
+            &:hover{
+                box-shadow: -2px 2px 16px #000;
+                transform: scale(1.02);
+            }
+    }
+    #zios_name{
+        text-align: center;
+        margin-top: 12px;
+    }
+    #zios_name h2{
+        font-size: 19px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #zios_name h6{
+        font-weight: 500;
+        font-style: italic;
+        color: rgb(147, 147, 147);
+        margin-top: 2px;
+        cursor: default;
+    }
+    #zios_place{
+        cursor: default;
+        color: #fff;
+        display: flex;
+        margin-left: 95px;
+        margin-top: 8px;
+    }
+    #zios_place h4{
+        font-size: 14px;
+        color: rgb(198, 198, 198);
+    }
+    #zios_place i{
+        padding-right: 4px;
+        font-size: 14px;
+        color: rgb(198, 198, 198);
+        transition: all .5s ease;
         &:hover{
-            color: rgb(24, 174, 239);
+           color: aqua;
         }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+    }
+    ul li{
+        transform: scale(1);
+        transition: all .2s ease-in;
+    }
+    
+    ul li:hover{
+        transform: scale(1.5);
+    }
+    ul li a{
+        text-decoration: none;
+        padding: 4px;
+        color: #fff;
+        transition: all 0.5s ease;
+            &:hover{
+                color: rgb(24, 174, 239);
+            }
+    }
+    #zios_footer{
+        display: flex;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    
+    }
+    #zios_footer h6{
+        color: #fff;
+        font-weight: 500;
+    }
+    #zios_footer h6 a{
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    
 }
-#zios_footer{
-    display: flex;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
+@media (max-width:460px) {
+    section{
+        width: 100%;
+        height: 100vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/bg5.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #ductoan10th1{
+        width: 280px;
+        height: 400px;
+        background: transparent;
+        backdrop-filter: blur(60px);
+        border: 2px solid #fff;
+        border-radius: 24px;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+        &:active{
+            /* transform: scale(1.008); */
+            box-shadow: -2px 2px 16px #000;
+            border-radius: 32px;
+        }
+    }
+    #zios_img img{
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 200px;
+        max-height: 500px;
+        margin-left: 14.5%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+        border-radius: 32px;
+        transform: scale(1);
+        cursor: alias;
+        transition: all linear .3s;
+            &:active{
+                box-shadow: -2px 2px 16px #000;
+                transform: scale(1.02);
+            }
+    }
+    #zios_name{
+        text-align: center;
+        margin-top: 12px;
+    }
+    #zios_name h2{
+        font-size: 19px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #zios_name h6{
+        font-weight: 500;
+        font-style: italic;
+        color: rgb(147, 147, 147);
+        margin-top: 2px;
+        cursor: default;
+    }
+    #zios_place{
+        cursor: default;
+        color: #fff;
+        display: flex;
+        margin-left: 95px;
+        margin-top: 8px;
+    }
+    #zios_place h4{
+        font-size: 14px;
+        color: rgb(198, 198, 198);
+    }
+    #zios_place i{
+        padding-right: 4px;
+        font-size: 14px;
+        color: rgb(198, 198, 198);
+        transition: all .5s ease;
+        &:active{
+           color: aqua;
+        }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+    }
+    ul li{
+        transform: scale(1);
+        transition: all .2s ease-in;
+    }
+    
+    ul li:active{
+        transform: scale(1.5);
+    }
+    ul li a{
+        text-decoration: none;
+        padding: 4px;
+        color: #fff;
+        transition: all 0.5s ease;
+            &:active{
+                color: rgb(24, 174, 239);
+            }
+    }
+    #zios_footer{
+        display: flex;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    
+    }
+    #zios_footer h6{
+        color: #fff;
+        font-weight: 500;
+    }
+    #zios_footer h6 a{
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    
 }
-#zios_footer h6{
-    color: #fff;
-    font-weight: 500;
-}
-#zios_footer h6 a{
-    color: #fff;
-    font-weight: 600;
-}
-
