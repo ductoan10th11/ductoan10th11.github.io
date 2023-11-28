@@ -19,7 +19,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/9_1_2023\ 10_26_30\ PM.png);
+    background-image: url(../img/bg5.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,15 +28,15 @@ section{
     width: 300px;
     height: 400px;
     background: transparent;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(60px);
     border: 1px solid #fff;
-    border-radius: 16px;
+    border-radius: 24px;
     transition: all 0.3s ease-in-out;
     transform: scale(1);
     &:hover{
         /* transform: scale(1.008); */
         box-shadow: -2px 2px 16px #000;
-        border-radius: 20px;
+        border-radius: 32px;
     }
 }
 #zios_img img{
@@ -45,10 +45,17 @@ section{
     height: auto;
     max-width: 200px;
     max-height: 500px;
-    margin-left: 50%;
+    margin-left: 17%;
     transform: translateX(-50%);
     margin-top: 25px;
-    border-radius: 16px;
+    border-radius: 32px;
+    transform: scale(1);
+    cursor: alias;
+    transition: all linear .3s;
+        &:hover{
+            box-shadow: -2px 2px 16px #000;
+            transform: scale(1.02);
+        }
 }
 #zios_name{
     text-align: center;
@@ -57,14 +64,17 @@ section{
 #zios_name h2{
     font-size: 19px;
     color: #fff;
+    cursor: pointer;
 }
 #zios_name h6{
     font-weight: 500;
     font-style: italic;
     color: rgb(147, 147, 147);
     margin-top: 2px;
+    cursor: default;
 }
 #zios_place{
+    cursor: default;
     color: #fff;
     display: flex;
     margin-left: 95px;
