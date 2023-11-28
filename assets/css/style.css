@@ -12,7 +12,7 @@ html{
     border-radius: 8px;
     background-color: #58cedb99;
 }
-@media (min-width:461px) {
+@media (min-width: 461px) {
     section{
         width: 100%;
         height: 100vh;
@@ -136,7 +136,7 @@ html{
     
     
 }
-@media (max-width:460px) {
+@media (max-width: 460px) {
     section{
         width: 100%;
         height: 100vh;
